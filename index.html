@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SF Detection</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #info {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 100%;
+            background: rgba(0,0,0, 0.14);
+        }
+
+        #info div {
+            display: inline-block;
+            user-select: none;
+
+            width: 50px;
+            height: 50px;
+
+            box-sizing: border-box;
+            padding: 13px;
+        }
+
+        #info div:hover {
+            background-color: rgba(0,0,0,0.14);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="700" height="400"></canvas>
+    <div id="info">
+        <div id="fullscreen">
+            <i class="material-icons">fullscreen</i>
+        </div>
+        <div id="clear">
+            <i class="material-icons">delete</i>
+        </div>
+        <div id="add">
+            <i class="material-icons">add</i>
+        </div>
+        <div id="validate">
+            <i class="material-icons">verified_user</i>
+        </div>
+        <div id="search">
+            <i class="material-icons">search</i>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="signatures.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
